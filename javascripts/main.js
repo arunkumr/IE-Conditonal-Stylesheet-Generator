@@ -19,6 +19,6 @@ var $process=$("#Process");
     
     $process.click(function(){
      var mediaQueries = parseMQs($inputCSS.val());
-     $outputCSS.val($(mediaQueries).join(" "))
+     $outputCSS.val(mediaQueries.join(" "))
      
     });
