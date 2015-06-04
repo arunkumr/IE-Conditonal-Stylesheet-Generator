@@ -14,7 +14,11 @@ var $process=$("#Process");
         return readRegEx(str, /(@media.(?!print)[^{]+\{[\s\S]+?}\s*})/g);
     };
     
-    var mediaQueries = parseMQs($inputCSS.val());
     
     
-    $process.click(function(){$outputCSS.val($(mediaQueries).join(" "))});
+    
+    $process.click(function(){
+     var mediaQueries = parseMQs($inputCSS.val());
+     $outputCSS.val($(mediaQueries).join(" "))
+     
+    });
