@@ -30,7 +30,7 @@ var pxl=$("#pxl").val();
     });
 
     
-        var $currentCSS = $jsMQ.map(function () {
+        var $currentCSS = $(jsMQ).map(function () {
             if (null !== this.max) {
                 if (pxl > this.min && pxl < this.max) {
                     return this.css;
