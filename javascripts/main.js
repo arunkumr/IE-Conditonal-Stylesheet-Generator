@@ -1,5 +1,6 @@
 var $inputCSS=$("#input");
 var $outputCSS=$("#output");
+var $process=$("#Process");
 
  //Regex Functions
  
@@ -14,4 +15,6 @@ var $outputCSS=$("#output");
     };
     
     var mediaQueries = parseMQs($inputCSS.value());
-    $outputCSS.value($(mediaQueries).join(" "));
+    
+    
+    $process.click(function(){$outputCSS.value($(mediaQueries).join(" "))});
